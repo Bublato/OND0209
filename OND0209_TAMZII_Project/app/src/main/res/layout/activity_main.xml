@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+    <fragment
+        class="com.example.vojta.ond0209_tamzii_project.DeviceList"
+        android:id="@+id/list_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/phone_list_height">
+        <!-- Preview: layout=@layout/row_devices -->
+    </fragment>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top" />
+
+    <TextView
+        android:id="@+id/status_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/empty" />
+
+    <Button
+        android:id="@+id/stream_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stream" />
+
+    <Button
+        android:id="@+id/connect_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/connect_peer_button" />
+
+    <Button
+        android:id="@+id/disconnect_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/disconnect_peer_button" />
+
+    <Button
+        android:id="@+id/discover_btn"
+        android:text="@string/discover_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
